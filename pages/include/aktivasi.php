@@ -1,6 +1,6 @@
 <?php 
 	if (isset($_GET['uname'])) {
-		include ('../conf/con.php');
+		include ('../conf/conn.php');
 		$username = $_GET['uname'];
 		$sql = $conn->prepare("UPDATE user SET status='1' WHERE username='$username'");
 		$sql->execute();

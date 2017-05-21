@@ -1,5 +1,5 @@
 <?php
-	include_once ('conf/con.php');
+	include_once ('conf/conn.php');
 	if(isset($_POST['save'])){
 		$nama = $_POST['nama'];
     $npm = $_POST['npm'];

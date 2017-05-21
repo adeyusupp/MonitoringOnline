@@ -1,5 +1,5 @@
 <?php
-   include('../conf/con.php');
+   include('../conf/conn.php');
    session_start();
    	
    	$title = "Monitoring Online";
