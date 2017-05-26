@@ -287,7 +287,7 @@
                   </thead>
                   <tbody>
                     <?php 
-                    $stat = 1;
+                    $stat = 0;
                     $no = 1;
                     $query = $conn->prepare('SELECT * FROM objektif WHERE id_proker = '.$idproker.' and stat= '.$stat.' ');
                     $query->execute();
