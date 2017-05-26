@@ -13,8 +13,8 @@
     
 
     //insert data ke tabel list-proker
-    $SQL = $conn->prepare('INSERT INTO list_proker(nama_proker,deskripsi,tujuan,pj,npm_pj,waktu,tempat,bidang,divisi,p_penilaian,tahun) VALUES(?,?,?,?,?,?,?,?)');
-      $SQL->bind_param('ssssssss',$proker,$deskripsi,$tujuan,$nama,$npm,$waktu,$tempat,$bidang,$p_penilaian,$tahun);
+    $SQL = $conn->prepare('INSERT INTO list_proker(nama_proker,deskripsi,tujuan,pj,npm_pj,waktu,tempat,bidang,divisi,p_penilaian,tahun) VALUES(?,?,?,?,?,?,?,?,?,?,?)');
+      $SQL->bind_param('sssssssssii',$proker,$deskripsi,$tujuan,$nama,$npm,$waktu,$tempat,$bidang,$divisi,$p_penilaian,$tahun);
       $SQL->execute();
 
       //cek error
